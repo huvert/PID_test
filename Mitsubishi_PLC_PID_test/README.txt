@@ -20,3 +20,9 @@ Det ligger ved to PID funksjonsblokker:
 2.    navn:     "PID_controller_v2"
       Likt som "PID_controller" men har i tillegg muligheten for å kjøre MANUELT/AUTO.
       
+
+3.    navn:     "PID_controller_v3"
+      Likt som "PID_controller" men har i tillegg muligheten for Tracking.
+      Dette gjør det mulig å ha flere PID-regulatorer parallelt.
+      Kan også ha andre filtre eller manuell styring paralellt vha. Tracking input. 
+      
