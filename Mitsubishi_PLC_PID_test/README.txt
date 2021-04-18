@@ -26,3 +26,8 @@ Det ligger ved to PID funksjonsblokker:
       Dette gjør det mulig å ha flere PID-regulatorer parallelt.
       Kan også ha andre filtre eller manuell styring paralellt vha. Tracking input. 
       
+3.    navn:     "PID_controller_v4"
+      Likt som "PID_controller_v3" men med inngang for pådrag fra LeadLag. 
+      Man unngår en del problemstillinger ved å gjøre det på denne måten.
+      - Unngår bruk av utvendig saturation blokk. Dette gjøres internt.
+      - Unngår problemer med Tracking. 
