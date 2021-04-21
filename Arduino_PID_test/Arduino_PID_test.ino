@@ -44,7 +44,7 @@ void task_testing(void *pvParameters)
 
   while(true)
   {
-    local_process_value = ps.get_output_A1_percentage()*255; //Getting the processvalue with a number between 0 and 255.
+    local_process_value = ps.get_output_integrator_A0_percentage()*255; //Getting the processvalue with a number between 0 and 255.
     Serial.print("Prosessverdi:");
     Serial.print(local_process_value);
     Serial.print(",");
@@ -53,5 +53,6 @@ void task_testing(void *pvParameters)
     Serial.print(100);
     Serial.print(",");
     Serial.println(150);
+    delay(100);
   }
 }
