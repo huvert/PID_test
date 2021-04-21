@@ -44,8 +44,14 @@ void task_testing(void *pvParameters)
 
   while(true)
   {
-    local_process_value = ps.get_output_integrator_A0_percentage()*25.5;
+    local_process_value = ps.get_output_A1_percentage()*255; //Getting the processvalue with a number between 0 and 255.
+    Serial.print("Prosessverdi:");
     Serial.print(local_process_value);
-    vTaskDelay(100 / portTICK_PERIOD_MS);
+    Serial.print(",");
+    Serial.print(50); //plotting lines to hold the axes constant.
+    Serial.print(",");
+    Serial.print(100);
+    Serial.print(",");
+    Serial.println(150);
   }
 }
